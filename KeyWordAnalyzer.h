@@ -1,7 +1,7 @@
 //*************************************************************
 //  File: KeyWordAnalyzer.h
 //  Date created: 1/17/2016
-//  Date edited: 2/15/2016
+//  Date edited: 2/18/2016
 //  Author: Nathan Martindale
 //  Copyright © 2016 Digital Warrior Labs
 //  Description: 
@@ -44,6 +44,6 @@ namespace dwl
 			
 			vector<KeyWord>* analyzeKeyWords(vector<string>* wordList);
 
-			vector<KeyWord>* filterKeys(string keys); // returns list of words that only match keys so far
+			vector<KeyWord>* filterKeys(string keys, bool caseSensitive); // returns list of words that only match keys so far
 	};
 }
