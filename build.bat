@@ -7,4 +7,4 @@ popd
 
 echo -------------------- PROGRAM RUN --------------------
 ::qdtesting.exe
-cd bin
+powershell -NoProfile -File "./psbuildpart.ps1" 

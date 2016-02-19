@@ -29,8 +29,8 @@ namespace dwl
 			// vector<vector<KeyWord> >* m_groups; // DON'T NEED, just single master group to start out with (prob don't even need it here)
 			vector<KeyWord>* m_completed;
 
-			//string m_userKeys; // users typed KEYS ONLY
 			string m_userWord; // users typed word (auto fills from keys)
+			bool m_singleWord; 
 			
 			void analyzeGroup(vector<KeyWord> group, int letter);
 		
@@ -41,6 +41,7 @@ namespace dwl
 
 			vector<KeyWord>* getKeyWords();
 			string getFilledWord();
+			bool isSingleWord();
 			
 			vector<KeyWord>* analyzeKeyWords(vector<string>* wordList);
 
