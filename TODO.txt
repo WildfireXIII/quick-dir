@@ -1,0 +1,1 @@
+take out all the flush statements, just leave them at end of function that prints? (Should speed up?)
